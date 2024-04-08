@@ -1,82 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on This is a title</title>
-    <link>//localhost:4321/tags/</link>
-    <description>Recent content in Tags on This is a title</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    <lastBuildDate>Tue, 01 Dec 2020 21:13:14 -0500</lastBuildDate>
-    <atom:link href="//localhost:4321/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Plot</title>
-      <link>//localhost:4321/tags/plot/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      <guid>//localhost:4321/tags/plot/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>R Markdown</title>
-      <link>//localhost:4321/tags/r-markdown/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      <guid>//localhost:4321/tags/r-markdown/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Regression</title>
-      <link>//localhost:4321/tags/regression/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
-      <guid>//localhost:4321/tags/regression/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Css</title>
-      <link>//localhost:4321/tags/css/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:4321/tags/css/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Html</title>
-      <link>//localhost:4321/tags/html/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:4321/tags/html/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Markdown</title>
-      <link>//localhost:4321/tags/markdown/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:4321/tags/markdown/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Themes</title>
-      <link>//localhost:4321/tags/themes/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:4321/tags/themes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tag With Whitespaces</title>
-      <link>//localhost:4321/tags/tag-with-whitespaces/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:4321/tags/tag-with-whitespaces/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Text</title>
-      <link>//localhost:4321/tags/text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:4321/tags/text/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Emoji</title>
-      <link>//localhost:4321/tags/emoji/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>//localhost:4321/tags/emoji/</guid>
-      <description></description>
-    </item>
+    <title>Tags | Academic</title>
+    <link>http://localhost:4321/tags/</link>
+      <atom:link href="http://localhost:4321/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:4321/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Tags</title>
+      <link>http://localhost:4321/tags/</link>
+    </image>
+    
   </channel>
 </rss>
