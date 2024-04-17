@@ -7,7 +7,7 @@
     <description>Li Rui - Shanghaitech University</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>http://localhost:4321/media/icon_hub68f9f726768a10afc6f12769d72c9cc_64789_512x512_fill_lanczos_center_3.png</url>
       <title>Li Rui - Shanghaitech University</title>
       <link>http://localhost:4321/</link>
     </image>
@@ -304,7 +304,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-713526498&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-238576491&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -314,7 +314,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-713526498&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-238576491&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
