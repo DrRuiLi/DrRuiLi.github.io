@@ -2,43 +2,196 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects | Li Rui - Shanghaitech University</title>
-    <link>http://localhost:4321/project/</link>
-      <atom:link href="http://localhost:4321/project/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://example.com/project/</link>
+      <atom:link href="https://example.com/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 03 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 16 Mar 2025 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_hub68f9f726768a10afc6f12769d72c9cc_64789_512x512_fill_lanczos_center_3.png</url>
+      <url>https://example.com/media/icon_hub68f9f726768a10afc6f12769d72c9cc_64789_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
-      <link>http://localhost:4321/project/</link>
+      <link>https://example.com/project/</link>
     </image>
     
     <item>
-      <title>MSdev</title>
-      <link>http://localhost:4321/project/msdev/</link>
-      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/msdev/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Example Project</title>
-      <link>http://localhost:4321/project/example/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/example/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+      <title>Gout Biomarkers</title>
+      <link>https://example.com/project/gout-biomarker/</link>
+      <pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/gout-biomarker/</guid>
+      <description>&lt;p&gt;To discover differential metabolites and pathways underlying infrequent gout flares (InGF) and frequent gout flares (FrGF) using metabolomics and establish a predictive model by machine learning (ML) algorithms.&lt;/p&gt;
+&lt;p&gt;Serum samples from a discovery cohort with 163 InGF and 239 FrGF patients were analyzed by mass spectrometry-based untargeted metabolomics to profile differential metabolites and explore dysregulated metabolic pathways using pathway enrichment analysis and network propagation-based algorithms. ML algorithms were performed to establish a predictive model based on selected metabolites, which was further optimized by a quantitative targeted metabolomics method and validated in an independent validation cohort with 97 participants with InGF and 139 participants with FrGF.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/gout-biomarker/featured_hu5ff4b702542ee11d8f4ec2e442845abc_469209_a6b0d322271a1e5271f5fec209ccd37c.webp 400w,
+               /project/gout-biomarker/featured_hu5ff4b702542ee11d8f4ec2e442845abc_469209_bfb8102bc82ad550c8f8e3597cca9e2f.webp 760w,
+               /project/gout-biomarker/featured_hu5ff4b702542ee11d8f4ec2e442845abc_469209_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://example.com/project/gout-biomarker/featured_hu5ff4b702542ee11d8f4ec2e442845abc_469209_a6b0d322271a1e5271f5fec209ccd37c.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;450&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Differential metabolites between InGF and FrGF groups were identified.
+Top dysregulated pathways included carbohydrates, amino acids, bile acids, and nucleotide metabolism.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/gout-biomarker/profile_hu764eca2bd43ad301033b8004d65fa004_768991_7a2dbd02bdf2600349a78e70c0d8369b.webp 400w,
+               /project/gout-biomarker/profile_hu764eca2bd43ad301033b8004d65fa004_768991_2ee16e4a62d1594d1c93531fa82f8477.webp 760w,
+               /project/gout-biomarker/profile_hu764eca2bd43ad301033b8004d65fa004_768991_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://example.com/project/gout-biomarker/profile_hu764eca2bd43ad301033b8004d65fa004_768991_7a2dbd02bdf2600349a78e70c0d8369b.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;493&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Subnetworks with maximum disturbances in the global metabolic networks featured cross-talk between purine metabolism and
+caffeine metabolism, as well as interactions among pathways involving primary bile acid biosynthesis,
+taurine and hypotaurine metabolism, alanine, aspartate and glutamate metabolism, suggesting epigenetic
+modifications and gut microbiome in metabolic alterations underlying InGF and FrGF.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/gout-biomarker/network_hub544bbb1f37149713d8f03b3cdabf7b3_274748_442fcc24b87de2801704dabb2b3b516f.webp 400w,
+               /project/gout-biomarker/network_hub544bbb1f37149713d8f03b3cdabf7b3_274748_52ca9085a0fc2be48fa6b782a31561b7.webp 760w,
+               /project/gout-biomarker/network_hub544bbb1f37149713d8f03b3cdabf7b3_274748_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://example.com/project/gout-biomarker/network_hub544bbb1f37149713d8f03b3cdabf7b3_274748_442fcc24b87de2801704dabb2b3b516f.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;685&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Potential metabolite biomarkers were identified using ML-based multivariable selection and further
+validated by targeted metabolomics. Area under receiver operating characteristics curve for
+differentiating InGF and FrGF achieved 0.88 and 0.67 for the discovery and validation cohorts, respectively.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/gout-biomarker/prediction_hufe0dcbc2597f702e77573a29848268e2_109614_1550b8ce0f9386b70b6ce2fa93b5dbe9.webp 400w,
+               /project/gout-biomarker/prediction_hufe0dcbc2597f702e77573a29848268e2_109614_fb9ba3f0b2fc2e4ed3a1f0c6fb8eb4fa.webp 760w,
+               /project/gout-biomarker/prediction_hufe0dcbc2597f702e77573a29848268e2_109614_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://example.com/project/gout-biomarker/prediction_hufe0dcbc2597f702e77573a29848268e2_109614_1550b8ce0f9386b70b6ce2fa93b5dbe9.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;319&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;In summary, Systematic metabolic alterations underlie InGF and FrGF, and distinct profiles are associated with differences in gout flare frequencies. Predictive modeling based on selected metabolites from metabolomics can differentiate InGF and FrGF.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>External Project</title>
-      <link>http://localhost:4321/project/external-project/</link>
+      <title>Mass Spectrometry based Isotopomer Parsing</title>
+      <link>https://example.com/project/msip/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/external-project/</guid>
+      <guid>https://example.com/project/msip/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>MSdev</title>
+      <link>https://example.com/project/msdev/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/msdev/</guid>
+      <description>&lt;p&gt;The lack of a universal analytical platform is one of the key factors
+limiting the biological application and development of metabolomics methodologies.
+We developed a metabolomics data analysis and method development platform, MSdev.
+MSdev integrates and develops various core tools and databases, including mass spectrometry
+data analysis, chemical computations, metabolomics databases, and molecular graph structures.
+This platform not only facilitates our routine metabolomics and metabolic flux analysis but also supports the development of advanced methods such as MSIP and MFNA.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/msdev/MSdev_structure_hua35508d5c6e5200ce0ca0133367b0f29_273571_4d9a19f6977d55e72357d649563a192b.webp 400w,
+               /project/msdev/MSdev_structure_hua35508d5c6e5200ce0ca0133367b0f29_273571_06e41033b09926f68718095b061a53f8.webp 760w,
+               /project/msdev/MSdev_structure_hua35508d5c6e5200ce0ca0133367b0f29_273571_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://example.com/project/msdev/MSdev_structure_hua35508d5c6e5200ce0ca0133367b0f29_273571_4d9a19f6977d55e72357d649563a192b.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;547&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
     </item>
     
   </channel>

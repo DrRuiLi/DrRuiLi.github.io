@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MS | Li Rui - Shanghaitech University</title>
+    <link>https://example.com/tag/ms/</link>
+      <atom:link href="https://example.com/tag/ms/index.xml" rel="self" type="application/rss+xml" />
+    <description>MS</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hub68f9f726768a10afc6f12769d72c9cc_64789_512x512_fill_lanczos_center_3.png</url>
+      <title>MS</title>
+      <link>https://example.com/tag/ms/</link>
+    </image>
+    
+    <item>
+      <title>Mass Spectrometry based Isotopomer Parsing</title>
+      <link>https://example.com/project/msip/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/msip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MSdev</title>
+      <link>https://example.com/project/msdev/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/msdev/</guid>
+      <description>&lt;p&gt;The lack of a universal analytical platform is one of the key factors
+limiting the biological application and development of metabolomics methodologies.
+We developed a metabolomics data analysis and method development platform, MSdev.
+MSdev integrates and develops various core tools and databases, including mass spectrometry
+data analysis, chemical computations, metabolomics databases, and molecular graph structures.
+This platform not only facilitates our routine metabolomics and metabolic flux analysis but also supports the development of advanced methods such as MSIP and MFNA.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /project/msdev/MSdev_structure_hua35508d5c6e5200ce0ca0133367b0f29_273571_4d9a19f6977d55e72357d649563a192b.webp 400w,
+               /project/msdev/MSdev_structure_hua35508d5c6e5200ce0ca0133367b0f29_273571_06e41033b09926f68718095b061a53f8.webp 760w,
+               /project/msdev/MSdev_structure_hua35508d5c6e5200ce0ca0133367b0f29_273571_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://example.com/project/msdev/MSdev_structure_hua35508d5c6e5200ce0ca0133367b0f29_273571_4d9a19f6977d55e72357d649563a192b.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;547&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
