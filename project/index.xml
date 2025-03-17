@@ -5,12 +5,20 @@
     <link>https://example.com/project/</link>
       <atom:link href="https://example.com/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 16 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_hub68f9f726768a10afc6f12769d72c9cc_64789_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
       <link>https://example.com/project/</link>
     </image>
+    
+    <item>
+      <title>Mass Spectrometry based Isotopomer Parsing</title>
+      <link>https://example.com/project/msip/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/msip/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Gout Biomarkers</title>
@@ -142,14 +150,6 @@ differentiating InGF and FrGF achieved 0.88 and 0.67 for the discovery and valid
 &lt;/p&gt;
 &lt;p&gt;In summary, Systematic metabolic alterations underlie InGF and FrGF, and distinct profiles are associated with differences in gout flare frequencies. Predictive modeling based on selected metabolites from metabolomics can differentiate InGF and FrGF.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Mass Spectrometry based Isotopomer Parsing</title>
-      <link>https://example.com/project/msip/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/msip/</guid>
-      <description></description>
     </item>
     
     <item>

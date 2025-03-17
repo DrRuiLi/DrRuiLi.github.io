@@ -33,6 +33,14 @@
     </item>
     
     <item>
+      <title>Mass Spectrometry based Isotopomer Parsing</title>
+      <link>https://example.com/project/msip/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/msip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Gout Biomarkers</title>
       <link>https://example.com/project/gout-biomarker/</link>
       <pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate>
@@ -493,7 +501,7 @@ data.head()
 
 
 
-&lt;div id=&#34;chart-987132456&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-519237684&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   (function() {
     let a = setInterval( function() {
@@ -503,7 +511,7 @@ data.head()
       clearInterval( a );
 
       Plotly.d3.json(&#34;./line-chart.json&#34;, function(chart) {
-        Plotly.plot(&#39;chart-987132456&#39;, chart.data, chart.layout, {responsive: true});
+        Plotly.plot(&#39;chart-519237684&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -907,14 +915,6 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://discord.gg/z8wNYzb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://docs.hugoblox.com/content/slides/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Mass Spectrometry based Isotopomer Parsing</title>
-      <link>https://example.com/project/msip/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/msip/</guid>
-      <description></description>
     </item>
     
     <item>
