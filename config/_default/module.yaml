@@ -4,6 +4,12 @@
 ## Docs: https://gohugo.io/hugo-modules/
 ############################
 
+replacements: >-
+  github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify -> themes/github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify,
+  github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-reveal -> themes/github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-reveal,
+  github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5 -> themes/github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5,
+  github.com/HugoBlox/hugo-blox-builder/modules/blox-core -> themes/github.com/HugoBlox/hugo-blox-builder/modules/blox-core,
+  github.com/HugoBlox/hugo-blox-builder/modules/blox-seo -> themes/github.com/HugoBlox/hugo-blox-builder/modules/blox-seo
 imports:
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
   - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-reveal
