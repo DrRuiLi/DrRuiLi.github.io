@@ -1,4 +1,163 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects | Li Rui - Shanghaitech University</title><link>https://drruili.github.io/project/</link><atom:link href="https://drruili.github.io/project/index.xml" rel="self" type="application/rss+xml"/><description>Projects</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate><image><url>https://drruili.github.io/media/icon_hub68f9f726768a10afc6f12769d72c9cc_64789_512x512_fill_lanczos_center_3.png</url><title>Projects</title><link>https://drruili.github.io/project/</link></image><item><title>Mass Spectrometry based Isotopomer Parsing</title><link>https://drruili.github.io/project/msip/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://drruili.github.io/project/msip/</guid><description/></item><item><title>Gout Biomarkers</title><link>https://drruili.github.io/project/gout-biomarker/</link><pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate><guid>https://drruili.github.io/project/gout-biomarker/</guid><description>&lt;p>To discover differential metabolites and pathways underlying infrequent gout flares (InGF) and frequent gout flares (FrGF) using metabolomics and establish a predictive model by machine learning (ML) algorithms.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects | Li Rui - Shanghaitech University</title><link>https://drruili.github.io/project/</link><atom:link href="https://drruili.github.io/project/index.xml" rel="self" type="application/rss+xml"/><description>Projects</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate><image><url>https://drruili.github.io/media/icon_hub68f9f726768a10afc6f12769d72c9cc_64789_512x512_fill_lanczos_center_3.png</url><title>Projects</title><link>https://drruili.github.io/project/</link></image><item><title>TRACE</title><link>https://drruili.github.io/project/trace/</link><pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate><guid>https://drruili.github.io/project/trace/</guid><description>&lt;p>TRACE is an integrated experimental–computational framework for untargeted LC–MS metabolomics. It uses complete &lt;sup>13&lt;/sup>C/&lt;sup>15&lt;/sup>N labeling to validate biological metabolites, then maps how competing unlabeled nutrients enter metabolism by &lt;strong>isotopic dilution&lt;/strong> rather than label enrichment.&lt;/p>
+&lt;p>The work is published in &lt;em>Analytical Chemistry&lt;/em> (&lt;a href="https://doi.org/10.1021/acs.analchem.6c02292" target="_blank" rel="noopener">doi:10.1021/acs.analchem.6c02292&lt;/a>). Software documentation is at &lt;a href="https://drruili.github.io/TRACE/" target="_blank" rel="noopener">drruili.github.io/TRACE&lt;/a>. TRACE runs on &lt;a href="https://drruili.github.io/project/msdev/">MSdev&lt;/a> objects and xcms peak tables.&lt;/p>
+&lt;h2 id="why-trace">Why TRACE&lt;/h2>
+&lt;p>Untargeted LC–MS can survey microbial metabolism at scale, but two problems remain tightly coupled:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Which peaks are biological?&lt;/strong> Modern instruments report tens of thousands of features. Many are adducts, in-source fragments, or chemical contaminants rather than metabolites made by the cell.&lt;/li>
+&lt;li>&lt;strong>Which nutrients are used when several are present?&lt;/strong> Classical isotope tracing follows one labeled substrate at a time. It does not ask how cells choose among competing carbon and nitrogen sources.&lt;/li>
+&lt;/ol>
+&lt;p>Existing tools, including our earlier single-peak method PAVE, validate features in isolation. Fixed &lt;em>m/z&lt;/em> and retention-time tolerances then generate large numbers of false connections as sensitivity increases, and they struggle to group the many MS forms of one metabolite.&lt;/p>
+&lt;p>TRACE addresses both problems with one design: fully label cells with &lt;sup>13&lt;/sup>C-glucose and &lt;sup>15&lt;/sup>N-ammonium, treat isotope-confirmed peaks as network seeds, calibrate error tolerances from those seeds, then map unlabeled nutrient fate by isotopic dilution.&lt;/p>
+&lt;h2 id="experimental-design">Experimental design&lt;/h2>
+&lt;p>&lt;em>Saccharomyces cerevisiae&lt;/em> CEN.PK was grown for more than ten generations in minimal medium with [U-&lt;sup>13&lt;/sup>C&lt;sub>6&lt;/sub>]-glucose and [U-&lt;sup>15&lt;/sup>N&lt;sub>2&lt;/sub>]-(NH&lt;sub>4&lt;/sub>)&lt;sub>2&lt;/sub>SO&lt;sub>4&lt;/sub> as the sole carbon and nitrogen sources, so &lt;em>de novo&lt;/em> metabolites carry predictable CN mass shifts.&lt;/p>
+&lt;p>Four tracer groups define the seeds:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Sample&lt;/th>
+&lt;th>Label&lt;/th>
+&lt;th>Role&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Unlabeled&lt;/td>
+&lt;td>C0N0&lt;/td>
+&lt;td>Light carbon and nitrogen&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;sup>15&lt;/sup>N-ammonium&lt;/td>
+&lt;td>C0Ny&lt;/td>
+&lt;td>Light carbon, heavy nitrogen&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;sup>13&lt;/sup>C-glucose&lt;/td>
+&lt;td>CxN0&lt;/td>
+&lt;td>Heavy carbon, light nitrogen&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Dual label&lt;/td>
+&lt;td>CxNy&lt;/td>
+&lt;td>Heavy carbon and nitrogen&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>For nutrient competition, unlabeled supplements (leucine, threonine, tryptophan, adenine, uracil, acetate, or a 14-compound mixture) were added on this labeled background. Incorporation of an unlabeled nutrient &lt;strong>dilutes&lt;/strong> the &lt;sup>13&lt;/sup>C/&lt;sup>15&lt;/sup>N labeling of downstream metabolites.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/project/trace/Figure1_hue7f45fbef46e17fa5f8c0f8b80066b26_444628_fef7b248124f28221d7479c2d8eda875.webp 400w,
+/project/trace/Figure1_hue7f45fbef46e17fa5f8c0f8b80066b26_444628_8ac81446b0b0dffcd4d7534e6fc21394.webp 760w,
+/project/trace/Figure1_hue7f45fbef46e17fa5f8c0f8b80066b26_444628_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://drruili.github.io/project/trace/Figure1_hue7f45fbef46e17fa5f8c0f8b80066b26_444628_fef7b248124f28221d7479c2d8eda875.webp"
+width="760"
+height="391"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;em>Figure 1. TRACE workflow. Isotope-confirmed peaks seed a network of adduct, fragment, and isotope connections; dynamic m/z and RT tolerances are learned from true CN links.&lt;/em>&lt;/p>
+&lt;h2 id="from-seeds-to-a-calibrated-network">From seeds to a calibrated network&lt;/h2>
+&lt;p>TRACE first keeps coeluting peak pairs whose &lt;em>m/z&lt;/em> differences match theoretical &lt;sup>13&lt;/sup>C/&lt;sup>15&lt;/sup>N shifts, then requires a complete unlabeled / &lt;sup>15&lt;/sup>N / &lt;sup>13&lt;/sup>C / dual-label &lt;strong>CN bundle&lt;/strong> whose intensities match the expected 1:1:1:1 pattern (Pearson ρ &amp;gt; 0.75).&lt;/p>
+&lt;p>In a representative positive-mode data set this collapsed ~25,000 features and hundreds of millions of pairs to &lt;strong>1,098&lt;/strong> high-confidence bundles. True CN links cluster tightly around zero &lt;em>m/z&lt;/em> error and RT shift. TRACE fits that cluster as a Gaussian signal against a nonparametric background and uses the central 99% of the signal as &lt;strong>dynamic tolerances&lt;/strong>, then propagates adduct, fragment, and isotope edges only inside those bounds.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/project/trace/Figure2_hu5b0ad8d84165d273f703c0bcec344165_1055477_448ec24c6ea2e85be26edb12b2e9bcce.webp 400w,
+/project/trace/Figure2_hu5b0ad8d84165d273f703c0bcec344165_1055477_2943ab4b087552ed8d99b91d896c7213.webp 760w,
+/project/trace/Figure2_hu5b0ad8d84165d273f703c0bcec344165_1055477_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://drruili.github.io/project/trace/Figure2_hu5b0ad8d84165d273f703c0bcec344165_1055477_448ec24c6ea2e85be26edb12b2e9bcce.webp"
+width="760"
+height="745"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;em>Figure 2. Network construction and dynamic filtering. High-ρ CN bundles define data-driven m/z and RT tolerances that suppress implausible isotopes and rare fragment forms.&lt;/em>&lt;/p>
+&lt;h2 id="global-assignment-and-annotation">Global assignment and annotation&lt;/h2>
+&lt;p>Edges are typed as isotope, fragment, or adduct and scored as chemical transformations (for example [M+H]&lt;sup>+&lt;/sup> → [M+Na]&lt;sup>+&lt;/sup> is H&lt;sub>−1&lt;/sub>Na&lt;sub>1&lt;/sub>). TRACE then partitions seeds into compatible subnetworks so that one metabolite and its MS forms share a seed, instead of resolving conflicting pairwise assignments.&lt;/p>
+&lt;p>Against an authentic-standard library, TRACE removed PAVE hits with large &lt;em>m/z&lt;/em> or RT error, corrected adduct mis-assignments caused by pairwise conflicts, and recovered features that PAVE had missed. About 70% of TRACE-annotated peaks matched HMDB, YMDB, KEGG, or an in-house database; about 27% of candidates matched in-house RT standards.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/project/trace/Figure3_huf4cdf2935f15371c3adfa87ad7c3cd7e_626606_1fec3f0b8796ee15c07cebd86b84a83f.webp 400w,
+/project/trace/Figure3_huf4cdf2935f15371c3adfa87ad7c3cd7e_626606_181bb4b94c0caacf33d1d786fc3be34d.webp 760w,
+/project/trace/Figure3_huf4cdf2935f15371c3adfa87ad7c3cd7e_626606_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://drruili.github.io/project/trace/Figure3_huf4cdf2935f15371c3adfa87ad7c3cd7e_626606_1fec3f0b8796ee15c07cebd86b84a83f.webp"
+width="760"
+height="566"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;em>Figure 3. Network assignment. TRACE groups adducts, fragments, and isotopologues of one metabolite and annotates a representative seed.&lt;/em>&lt;/p>
+&lt;h2 id="more-sensitivity-is-not-more-biology">More sensitivity is not more biology&lt;/h2>
+&lt;p>The same labeled yeast extract was analyzed on four Orbitrap platforms (Q Exactive Plus, Exploris 480, Astral, Excedion Pro) and at several resolutions. Total features rose by &lt;strong>331%&lt;/strong> from QE Plus to Excedion Pro, while TRACE-validated metabolites rose only &lt;strong>117%&lt;/strong>. The share of high-confidence biological annotations fell from &lt;strong>2.94% to 1.48%&lt;/strong>. Extra peaks are mostly non-biological unless annotation is specific.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/project/trace/Figure4_hu4e4282ac7da4bfdbde50715c19480126_336191_3b07853711dbddcd0d9dc9b5ac4dd224.webp 400w,
+/project/trace/Figure4_hu4e4282ac7da4bfdbde50715c19480126_336191_50960cbccdef6aadd418424bd3551555.webp 760w,
+/project/trace/Figure4_hu4e4282ac7da4bfdbde50715c19480126_336191_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://drruili.github.io/project/trace/Figure4_hu4e4282ac7da4bfdbde50715c19480126_336191_3b07853711dbddcd0d9dc9b5ac4dd224.webp"
+width="491"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;em>Figure 4. Instrument comparison. Feature count grows faster than TRACE-validated metabolites as sensitivity and resolution increase.&lt;/em>&lt;/p>
+&lt;h2 id="nutrient-fate-under-competition">Nutrient fate under competition&lt;/h2>
+&lt;p>With formulas and CN networks fixed from the four tracer groups, TRACE maps nutrient conditions onto that network. For each metabolite, the &lt;strong>labeling fraction&lt;/strong> is the abundance-weighted &lt;sup>13&lt;/sup>C or &lt;sup>15&lt;/sup>N atom count; the &lt;strong>absorption fraction&lt;/strong> is the drop in labeling relative to the fully labeled control.&lt;/p>
+&lt;p>The complete mixture contributed carbon and nitrogen across sulfur, purine, and amino-acid metabolism. Individual supplements were pathway-selective: tryptophan into tryptophan metabolism, adenine into purine metabolism, threonine into serine/glycine metabolism, acetate as C&lt;sub>2&lt;/sub>/C&lt;sub>4&lt;/sub>/C&lt;sub>6&lt;/sub> units.&lt;/p>
+&lt;p>Two molecules test the method at opposite extremes of pathway architecture:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Glutathione (GSH)&lt;/strong> is a linear tripeptide. Its isotopologues tracked glutamate, glycine, and cysteine, including acetate-derived carbon in the glutamate moiety and threonine-derived C&lt;sub>2&lt;/sub>N&lt;sub>1&lt;/sub> in glycine.&lt;/li>
+&lt;li>&lt;strong>NAD&lt;sup>+&lt;/sup>&lt;/strong> is a hub (adenine + two riboses + nicotinamide). Unlabeled adenine produced both salvage (C&lt;sub>5&lt;/sub>N&lt;sub>0&lt;/sub>) and ongoing &lt;em>de novo&lt;/em> (C&lt;sub>10&lt;/sub>N&lt;sub>5&lt;/sub>) forms; unlabeled tryptophan diluted nicotinamide via kynurenine; a C&lt;sub>0&lt;/sub>N&lt;sub>1&lt;/sub> nicotinamide form indicated glutamine nitrogen entering independently of the carbon backbone.&lt;/li>
+&lt;/ul>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/project/trace/Figure5_huae463e905f8fcfe487c2825b7e410c58_1205778_f14d21bce5262bb9b958118267ded670.webp 400w,
+/project/trace/Figure5_huae463e905f8fcfe487c2825b7e410c58_1205778_476cd230b957b42bc93e19773332912f.webp 760w,
+/project/trace/Figure5_huae463e905f8fcfe487c2825b7e410c58_1205778_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://drruili.github.io/project/trace/Figure5_huae463e905f8fcfe487c2825b7e410c58_1205778_f14d21bce5262bb9b958118267ded670.webp"
+width="760"
+height="712"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;em>Figure 5. Nutrient-source attribution. Isotopic dilution maps competing unlabeled nutrients into pathways; GSH and NAD⁺ illustrate linear assembly versus convergent biosynthesis.&lt;/em>&lt;/p>
+&lt;h2 id="software">Software&lt;/h2>
+&lt;p>A typical analysis loads a pre-processed MSdev object (xcms peaks with &lt;code>sample.type&lt;/code> set to the four isotope groups), runs the pipeline, and exports tables:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-r" data-lang="r">&lt;span class="line">&lt;span class="cl">&lt;span class="nf">library&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">MSdev&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nf">library&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">TRACE&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">obj&lt;/span> &lt;span class="o">&amp;lt;-&lt;/span> &lt;span class="nf">TRACE_workflow&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">obj&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">rt.tol&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="m">10&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">ppm&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="m">5&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cpdb&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">&amp;#34;path/to/trace.cp.db.xlsx&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nf">TRACE_export&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">obj&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">file&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">&amp;#34;TRACE_results.xlsx&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Version&lt;/th>
+&lt;th>Role&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;a href="https://github.com/DrRuiLi/TRACE/releases/tag/v1.0.0" target="_blank" rel="noopener">&lt;code>v1.0.0&lt;/code>&lt;/a>&lt;/td>
+&lt;td>Code used for the published article&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>main&lt;/code> (1.1.0+)&lt;/td>
+&lt;td>Ongoing development&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Install the article snapshot with &lt;code>devtools::install_github(&amp;quot;DrRuiLi/TRACE&amp;quot;, ref = &amp;quot;v1.0.0&amp;quot;)&lt;/code>. See &lt;a href="https://drruili.github.io/TRACE/articles/TRACE.html" target="_blank" rel="noopener">Get started&lt;/a> for the full workflow.&lt;/p>
+&lt;h2 id="scope">Scope&lt;/h2>
+&lt;p>TRACE is built for systems in which complete isotopic labeling (the 1:1:1:1 CN bundle) is achievable, as in yeast grown for many generations on labeled glucose and ammonium. It is not a drop-in seed detector for mammalian cells. High-confidence TRACE annotations can still be transferred by running mammalian samples in the same batch as fully labeled microbial references and aligning features.&lt;/p></description></item><item><title>Mass Spectrometry based Isotopomer Parsing</title><link>https://drruili.github.io/project/msip/</link><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><guid>https://drruili.github.io/project/msip/</guid><description/></item><item><title>Gout Biomarkers</title><link>https://drruili.github.io/project/gout-biomarker/</link><pubDate>Sun, 16 Mar 2025 00:00:00 +0000</pubDate><guid>https://drruili.github.io/project/gout-biomarker/</guid><description>&lt;p>To discover differential metabolites and pathways underlying infrequent gout flares (InGF) and frequent gout flares (FrGF) using metabolomics and establish a predictive model by machine learning (ML) algorithms.&lt;/p>
 &lt;p>Serum samples from a discovery cohort with 163 InGF and 239 FrGF patients were analyzed by mass spectrometry-based untargeted metabolomics to profile differential metabolites and explore dysregulated metabolic pathways using pathway enrichment analysis and network propagation-based algorithms. ML algorithms were performed to establish a predictive model based on selected metabolites, which was further optimized by a quantitative targeted metabolomics method and validated in an independent validation cohort with 97 participants with InGF and 139 participants with FrGF.&lt;/p>
 &lt;p>
 &lt;figure >

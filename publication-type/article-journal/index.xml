@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Article-Journal | Li Rui - Shanghaitech University</title><link>https://drruili.github.io/publication-type/article-journal/</link><atom:link href="https://drruili.github.io/publication-type/article-journal/index.xml" rel="self" type="application/rss+xml"/><description>Article-Journal</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Nov 2023 00:00:00 +0000</lastBuildDate><image><url>https://drruili.github.io/media/icon_hub68f9f726768a10afc6f12769d72c9cc_64789_512x512_fill_lanczos_center_3.png</url><title>Article-Journal</title><link>https://drruili.github.io/publication-type/article-journal/</link></image><item><title>Metabolomics and Machine Learning Identify Metabolic Differences and Potential Biomarkers for Frequent versus Infrequent Gout Flares</title><link>https://drruili.github.io/publication/gout-freq/</link><pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate><guid>https://drruili.github.io/publication/gout-freq/</guid><description>&lt;div class="alert alert-note">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Article-Journal | Li Rui - Shanghaitech University</title><link>https://drruili.github.io/publication-type/article-journal/</link><atom:link href="https://drruili.github.io/publication-type/article-journal/index.xml" rel="self" type="application/rss+xml"/><description>Article-Journal</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 18 Aug 2026 00:00:00 +0000</lastBuildDate><image><url>https://drruili.github.io/media/icon_hub68f9f726768a10afc6f12769d72c9cc_64789_512x512_fill_lanczos_center_3.png</url><title>Article-Journal</title><link>https://drruili.github.io/publication-type/article-journal/</link></image><item><title>TRACE: An Integrated Isotope-Tracing Framework for Metabolite Validation and Nutrient Fate Mapping</title><link>https://drruili.github.io/publication/trace/</link><pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate><guid>https://drruili.github.io/publication/trace/</guid><description>&lt;p>TRACE is an integrated experimental and computational framework for untargeted LC–MS metabolomics. Fully labeled &lt;sup>13&lt;/sup>C-glucose / &lt;sup>15&lt;/sup>N-ammonium cultures supply high-confidence CN bundles that seed a peak–peak network; dynamic &lt;em>m/z&lt;/em> and retention-time tolerances are learned from those seeds, then unlabeled nutrients are mapped by &lt;strong>isotopic dilution&lt;/strong>.&lt;/p>
+&lt;p>The accompanying R package is &lt;a href="https://drruili.github.io/TRACE/" target="_blank" rel="noopener">TRACE&lt;/a> (GitHub: &lt;a href="https://github.com/DrRuiLi/TRACE" target="_blank" rel="noopener">DrRuiLi/TRACE&lt;/a>). A project-level overview, including workflow figures, is on the &lt;a href="https://drruili.github.io/project/trace/">TRACE project page&lt;/a>.&lt;/p>
+&lt;h2 id="why-a-new-framework">Why a new framework&lt;/h2>
+&lt;p>Untargeted LC–MS surveys microbial metabolism at scale, but two problems remain coupled: many detected peaks are adducts, fragments, or contaminants rather than cell-made metabolites, and classical tracing follows one labeled substrate at a time. TRACE treats isotope-confirmed peaks as network seeds, calibrates error tolerances from those seeds, and asks how cells partition competing carbon and nitrogen sources.&lt;/p>
+&lt;h2 id="main-results">Main results&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>Calibrated networks.&lt;/strong> Complete unlabeled / &lt;sup>15&lt;/sup>N / &lt;sup>13&lt;/sup>C / dual-label CN bundles (Pearson ρ &amp;gt; 0.75) collapsed ~25,000 features to 1,098 high-confidence seeds in a representative positive-mode data set, from which data-driven &lt;em>m/z&lt;/em> and RT tolerances are learned.&lt;/li>
+&lt;li>&lt;strong>Better assignment than pairwise methods.&lt;/strong> Global network assignment grouped adducts, fragments, and isotopologues of one metabolite, removed large &lt;em>m/z&lt;/em>/RT errors seen in PAVE, and recovered missed features. About 70% of TRACE-annotated peaks matched HMDB, YMDB, KEGG, or an in-house database.&lt;/li>
+&lt;li>&lt;strong>Sensitivity is not biology.&lt;/strong> From Q Exactive Plus to Excedion Pro, total features rose 331% while TRACE-validated metabolites rose 117%, and the share of high-confidence annotations fell from 2.94% to 1.48%.&lt;/li>
+&lt;li>&lt;strong>Nutrient fate under competition.&lt;/strong> Unlabeled leucine, threonine, tryptophan, adenine, uracil, acetate, or a 14-compound mixture diluted the labeled background in a pathway-selective way. Glutathione tracked linear amino-acid assembly; NAD&lt;sup>+&lt;/sup> revealed concurrent salvage, &lt;em>de novo&lt;/em>, and independent nitrogen entry.&lt;/li>
+&lt;/ul>
+&lt;h2 id="software-versions">Software versions&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Version&lt;/th>
+&lt;th>Role&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;a href="https://github.com/DrRuiLi/TRACE/releases/tag/v1.0.0" target="_blank" rel="noopener">&lt;code>v1.0.0&lt;/code>&lt;/a>&lt;/td>
+&lt;td>Code used for this article&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;code>main&lt;/code> (1.1.0+)&lt;/td>
+&lt;td>Ongoing development&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-r" data-lang="r">&lt;span class="line">&lt;span class="cl">&lt;span class="n">devtools&lt;/span>&lt;span class="o">::&lt;/span>&lt;span class="nf">install_github&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;DrRuiLi/TRACE&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">ref&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">&amp;#34;v1.0.0&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Metabolomics and Machine Learning Identify Metabolic Differences and Potential Biomarkers for Frequent versus Infrequent Gout Flares</title><link>https://drruili.github.io/publication/gout-freq/</link><pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate><guid>https://drruili.github.io/publication/gout-freq/</guid><description>&lt;div class="alert alert-note">
 &lt;div>
 Click the &lt;em>Cite&lt;/em> button above to demo the feature to enable visitors to import publication metadata into their reference management software.
 &lt;/div>
