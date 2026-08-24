@@ -52,10 +52,25 @@ sections:
   content:
     date_format: Jan 2006
     items:
+    - company: Shanghai Institute of Nutrition and Health of the Chinese Academy of Sciences
+      company_logo: cas
+      company_url: "http://www.sinh.cas.cn/"
+      date_end: ""
+      date_start: "2025-10-01"
+      description: |2-
+          Responsibilities include:
+
+          * Metabolomics methodology
+          * Mass spectrometry algorithm
+          * Metabolic flux
+          * Multi-omics
+          
+      location: Shanghai, CN
+      title:  Post-doctoral
     - company: City University of Hong Kong
       company_logo: cityu
       company_url: "http://huiyongyinlab.com/blog-posts/"
-      date_end: ""
+      date_end: "2025-09-30"
       date_start: "2024-10-01"
       description: |2-
           Responsibilities include:
